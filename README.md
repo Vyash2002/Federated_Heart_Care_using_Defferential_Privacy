@@ -23,6 +23,7 @@ guarantee privacy.
 5. Visualization & EDA: Feature importance, confusion matrices, accuracy graphs, etc.
 
 6. Interactive Streamlit Dashboard:
+   
     ○ Upload datasets (.csv, .xlsx)
   
     ○ Configure privacy parameters (noise multiplier, clipping norm)
@@ -34,6 +35,7 @@ guarantee privacy.
 🏗️ System Architecture
 
 1. Data Preprocessing
+   
     ○ Missing value handling
 
     ○ Feature encoding & normalization
@@ -41,20 +43,23 @@ guarantee privacy.
     ○ Class balancing (SMOTE)
 
 3. Model Training
+   
     ○ Centralized ML models for baseline accuracy
 
     ○ ANN implementation in PyTorch
   
     ○ Federated Averaging (FedAvg) for aggregation
 
-4. Differential Privacy
+5. Differential Privacy
+   
     ○ Gradient clipping
 
     ○ Gaussian noise addition
   
     ○ Privacy budget tracking (ε, δ)
 
-5. Deployment
+7. Deployment
+   
     ○ Streamlit dashboard for clinicians and researchers
 
     ○ API/Edge deployment support for healthcare systems
@@ -64,6 +69,7 @@ guarantee privacy.
 1. Programming Language: Python 3.11
 
 2. Libraries & Tools:
+   
      ○ Data Processing: pandas, numpy
   
      ○ Visualization: matplotlib, seaborn
@@ -79,15 +85,16 @@ guarantee privacy.
 📊 Results
 
 1. Baseline Accuracy:
+   
     ○ Logistic Regression → 74.94%
   
     ○ SVM → 91.56%
   
     ○ Random Forest → 97.19%
   
-2. Centralized ANN → 89.26%
+3. Centralized ANN → 89.26%
 
-3. Federated Learning with DP → ~96% accuracy with minor privacy-utility trade-off
+4. Federated Learning with DP → ~96% accuracy with minor privacy-utility trade-off
 
-4. Streamlit Dashboard → Enabled real-time predictions and visualization of training
+5. Streamlit Dashboard → Enabled real-time predictions and visualization of training
 progress
